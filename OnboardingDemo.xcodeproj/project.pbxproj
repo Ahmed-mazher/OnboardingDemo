@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		F837A95D25EA5F6B00CA318D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A95C25EA5F6B00CA318D /* AppDelegate.swift */; };
 		F837A95F25EA5F6B00CA318D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A95E25EA5F6B00CA318D /* SceneDelegate.swift */; };
-		F837A96125EA5F6B00CA318D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A96025EA5F6B00CA318D /* ViewController.swift */; };
+		F837A96125EA5F6B00CA318D /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A96025EA5F6B00CA318D /* OnboardingVC.swift */; };
 		F837A96425EA5F6B00CA318D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F837A96225EA5F6B00CA318D /* Main.storyboard */; };
 		F837A96625EA5F6C00CA318D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F837A96525EA5F6C00CA318D /* Assets.xcassets */; };
 		F837A96925EA5F6C00CA318D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F837A96725EA5F6C00CA318D /* LaunchScreen.storyboard */; };
+		F837A97425EA633300CA318D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A97325EA633300CA318D /* UIView+Extension.swift */; };
+		F837A97B25EA64AC00CA318D /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A97A25EA64AC00CA318D /* OnboardingSlide.swift */; };
+		F837A97F25EA67C900CA318D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F837A97E25EA67C900CA318D /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F837A95925EA5F6B00CA318D /* OnboardingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F837A95C25EA5F6B00CA318D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F837A95E25EA5F6B00CA318D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F837A96025EA5F6B00CA318D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F837A96025EA5F6B00CA318D /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		F837A96325EA5F6B00CA318D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F837A96525EA5F6C00CA318D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F837A96825EA5F6C00CA318D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F837A96A25EA5F6C00CA318D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F837A97325EA633300CA318D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F837A97A25EA64AC00CA318D /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		F837A97E25EA67C900CA318D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				F837A95C25EA5F6B00CA318D /* AppDelegate.swift */,
 				F837A95E25EA5F6B00CA318D /* SceneDelegate.swift */,
-				F837A96025EA5F6B00CA318D /* ViewController.swift */,
-				F837A96225EA5F6B00CA318D /* Main.storyboard */,
 				F837A96525EA5F6C00CA318D /* Assets.xcassets */,
-				F837A96725EA5F6C00CA318D /* LaunchScreen.storyboard */,
 				F837A96A25EA5F6C00CA318D /* Info.plist */,
+				F837A97825EA645300CA318D /* Extensions */,
+				F837A97725EA645100CA318D /* Model */,
+				F837A97925EA647000CA318D /* View */,
+				F837A97625EA644E00CA318D /* Controller */,
 			);
 			path = OnboardingDemo;
+			sourceTree = "<group>";
+		};
+		F837A97625EA644E00CA318D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F837A96025EA5F6B00CA318D /* OnboardingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F837A97725EA645100CA318D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F837A97A25EA64AC00CA318D /* OnboardingSlide.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F837A97825EA645300CA318D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F837A97325EA633300CA318D /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F837A97925EA647000CA318D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F837A96225EA5F6B00CA318D /* Main.storyboard */,
+				F837A96725EA5F6C00CA318D /* LaunchScreen.storyboard */,
+				F837A97E25EA67C900CA318D /* OnboardingCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F837A96125EA5F6B00CA318D /* ViewController.swift in Sources */,
+				F837A97B25EA64AC00CA318D /* OnboardingSlide.swift in Sources */,
+				F837A96125EA5F6B00CA318D /* OnboardingVC.swift in Sources */,
 				F837A95D25EA5F6B00CA318D /* AppDelegate.swift in Sources */,
+				F837A97425EA633300CA318D /* UIView+Extension.swift in Sources */,
 				F837A95F25EA5F6B00CA318D /* SceneDelegate.swift in Sources */,
+				F837A97F25EA67C900CA318D /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rivile.OnboardingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rivile.OnboardingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

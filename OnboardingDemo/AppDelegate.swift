@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  OnboardingDemo
 //
-//  Created by Rivile on 2/27/21.
+//  Created by Ahmed mazher on 2/27/21.
 //
 
 import UIKit
